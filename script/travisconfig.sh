@@ -2,23 +2,23 @@
 
 ## Create back ups if existing
 if [ -f ~/.Xresources ]; then
-	mv ~/.Xresources ~/.Xresources.bak
+	mv ~/.Xresources /usr/local/share/backups/.Xresources
 fi
 
 if [ -f ~/.vimrc ]; then
-	mv ~/.vimrc ~/.vimrc.bak
+	mv ~/.vimrc /usr/local/share/backups/.vimrc
 fi
 
 if [ -f ~/.xinitrc ]; then
-	mv ~/.xinitrc ~/.xinitrc.bak
+	mv ~/.xinitrc /usr/local/share/backups/.xinitrc
 fi
 
 if [ -f ~/.xsession ]; then
-	mv ~/.xsession ~/.xsession.bak
+	mv ~/.xsession /usr/local/share/backups/.xsession
 fi
 
 if [ -f ~/.config/i3/config ]; then
-	mv ~/.config/i3/config ~/.config/i3/config.bak
+	mv ~/.config/i3/config /usr/local/share/backups/.config/i3/config
 fi
 
 ## Now delete the configs
